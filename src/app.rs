@@ -108,6 +108,11 @@ impl eframe::App for DemoApp {
                         });
                     });
             });
+
+            ui.add(egui::github_link_file!(
+                "https://github.com/kobutri/egui-vs-react-perf/blob/main/",
+                "Source code."
+            ));
         });
     }
 }
