@@ -1,6 +1,6 @@
 {
-  "name": "egui Template PWA",
-  "short_name": "egui-template-pwa",
+  "name": "react-vs-egui-performancee PWA",
+  "short_name": "react-vs-egui-performance-pwa",
   "icons": [
     {
       "src": "./assets/icon-256.png",

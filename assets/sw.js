@@ -1,9 +1,9 @@
-var cacheName = 'egui-template-pwa';
+var cacheName = 'react-vs-egui-performance-pwa';
 var filesToCache = [
   './',
   './index.html',
-  './eframe_template.js',
-  './eframe_template_bg.wasm',
+  './react-vs-egui-performance.js',
+  './react-vs-egui-performancee_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
