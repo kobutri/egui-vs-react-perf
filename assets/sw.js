@@ -3,7 +3,7 @@ var filesToCache = [
   './',
   './index.html',
   './react-vs-egui-performance.js',
-  './react-vs-egui-performancee_bg.wasm',
+  './react-vs-egui-performance_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
