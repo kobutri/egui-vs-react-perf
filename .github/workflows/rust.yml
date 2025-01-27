@@ -151,7 +151,7 @@ jobs:
         cross build --verbose --release --target=${{ matrix.TARGET }}
 
     - name: Rename
-      run: cp target/${{ matrix.TARGET }}/release/react_vs_egui_performance${{ matrix.EXTENSION }} react-vs-egui-performance-${{ matrix.TARGET }}${{ matrix.EXTENSION }}
+      run: cp target/${{ matrix.TARGET }}/release/react-vs-egui-performance{{ matrix.EXTENSION }} react-vs-egui-performance-${{ matrix.TARGET }}${{ matrix.EXTENSION }}
 
     - uses: actions/upload-artifact@master
       with:
