@@ -50,7 +50,7 @@ fn main() {
             .start(
                 canvas,
                 web_options,
-                Box::new(|cc| Ok(Box::new(react_vs_egui_performance::DemoApp::default()))),
+                Box::new(|_cc| Ok(Box::new(react_vs_egui_performance::DemoApp::default()))),
             )
             .await;
 
