@@ -1,6 +1,9 @@
 // taken from https://github.com/emilk/egui/blob/93d214429491dfd628cd7331c9cef96d11a8738d/crates/egui_demo_app/src/frame_history.rs#L4
 // LICENSE MIT/Apache 2
 
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 use egui::util::History;
 
 pub struct FrameHistory {

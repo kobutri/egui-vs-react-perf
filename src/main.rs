@@ -7,8 +7,7 @@ mod frame_history;
 struct DemoApp {
     count: i32,
     color: [f32; 3], // Changed from Color32 to [f32; 4] for color picker compatibility
-    scroll_offset: Vec2,
-    frame_history: crate::frame_history::FrameHistory,
+    frame_history: frame_history::FrameHistory,
 }
 
 impl eframe::App for DemoApp {
@@ -81,14 +80,14 @@ impl eframe::App for DemoApp {
                         ui.set_min_size(Vec2::new(384.0, 256.0));
                         ui.vertical(|ui| {
                             ui.heading("A Slow Component");
-                            ui.label("(This component renders 100,000 boxes)");
+                            ui.label("(This component renders 10,000 boxes)");
 
                             // Scrollable area for boxes
                             egui::ScrollArea::both()
                                 .auto_shrink([false; 2])
                                 .show(ui, |ui| {
                                     ui.horizontal_wrapped(|ui| {
-                                        for i in 0..100000 {
+                                        for i in 0..10000 {
                                             let color = Color32::from_rgb(
                                                 (i % 255) as u8,
                                                 ((i * 2) % 255) as u8,
@@ -129,7 +128,6 @@ fn main() -> eframe::Result<()> {
         Box::new(|_cc| Ok(Box::<DemoApp>::default())),
     )
 }
-
 
 // When compiling to web using trunk:
 #[cfg(target_arch = "wasm32")]
